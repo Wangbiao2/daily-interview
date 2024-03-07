@@ -21,7 +21,7 @@
 可以在增加感受野的同时保持特征图的尺寸不变,从而代替下采样和上采样，通过调整扩张率得到不同的感受野不大小：  
 a. 是普通的卷积过程(dilation rate = 1),卷积后的感受野为3  
 b. 是dilation rate = 2的空洞卷积,卷积后的感受野为5  
-c. 是dilation rate = 3的空洞卷积,卷积后的感受野为8  
+c. 是dilation rate = 3的空洞卷积,卷积后的感受野为7  
 可以这么说,普通卷积是空洞卷积的一种特殊情况  
 **参考资料**: [吃透空洞卷积(Dilated Convolutions)](https://zhuanlan.zhihu.com/p/113285797)、[『计算机视觉』空洞卷积](https://www.cnblogs.com/hellcat/p/9687624.html)
 
