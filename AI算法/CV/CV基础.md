@@ -35,7 +35,9 @@ c. 是dilation rate = 3的空洞卷积,卷积后的感受野为7
 - L1、L2正则化：训练时限制权值的大小，增加惩罚机制，使得网络更稀疏；  
 - 数据清洗：去除问题数据、错误标签和噪声数据；  
 - 限制网络训练时间：在训练时将训练集和验证集损失分别输出，当训练集损失持续下降，而验证集损失不再下降时，网络就开始出现过拟合现象，此时就可以停止训练了；  
-- 在网络中使用BN层（Batch Normalization）也可以一定程度上防止过拟合。  
+- 在网络中使用BN层（Batch Normalization）也可以一定程度上防止过拟合。
+
+**BN、LN、IN、GN的区别（好理解）** https://www.jianshu.com/p/74f1bdf53816
 **参考资料**：[N，LN，IN，GN都是什么？不同归一化方法的比较](https://cloud.tencent.com/developer/article/1651655)、[深度学习中的五种归一化（BN、LN、IN、GN和SN）方法简介](https://blog.csdn.net/u013289254/article/details/99690730)、[层归一化，循环批归一化（2016）和批归一化RNN（2015）有什么区别？](https://qastack.cn/datascience/12956/paper-whats-the-difference-between-layer-normalization-recurrent-batch-normal)
 
 ## 5. 除了SGD和Adam之外，你还知道哪些优化算法？  
